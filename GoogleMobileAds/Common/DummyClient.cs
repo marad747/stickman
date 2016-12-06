@@ -17,6 +17,7 @@ using System.Reflection;
 
 using GoogleMobileAds.Api;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace GoogleMobileAds.Common
 {
@@ -97,6 +98,7 @@ namespace GoogleMobileAds.Common
         public void ShowInterstitial()
         {
             Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
+            SceneManager.LoadScene("game");
         }
 
         public void DestroyInterstitial()

@@ -4,6 +4,10 @@ using GoogleMobileAds.Api;
 using UnityEngine.SceneManagement;
 using System;
 
+/*
+CountCoins - Количество монеток
+
+*/
 public class MenuController : MonoBehaviour {
 
     // Use this for initialization    
@@ -16,16 +20,17 @@ public class MenuController : MonoBehaviour {
     InterstitialAd interstitial;
 
     void Awake() {
-        CtreateInsertial();
+        CtreateInsertial();        
     }
 
     void Start () {
-       
+         
     }                                            	
 	// Update is called once per frame
 	void Update () {
-        CointTxt.text = PlayerPrefs.GetInt("CountCoins").ToString();       
+        CointTxt.text = PlayerPrefs.GetInt("CountCoins").ToString();
     }
+
     public void LoadGame() {
         if (interstitial.IsLoaded()) {
             interstitial.Show();
@@ -38,6 +43,7 @@ public class MenuController : MonoBehaviour {
         Application.Quit();
 
     }
+
     void HideOrShow(GameObject obj,bool flag) {
         obj.SetActive(flag);
     }

@@ -6,6 +6,7 @@ public class ShopController : MonoBehaviour {
     // Use this for initialization 
     [SerializeField]
     private int price;
+
 	void Start () {
         if (PlayerPrefs.GetString(gameObject.name.ToString()) == "yes") {
             gameObject.GetComponent<UIButton>().onClick.Clear();
