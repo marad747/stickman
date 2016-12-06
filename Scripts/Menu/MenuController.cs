@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using GoogleMobileAds.Api;
+using UnityEngine.SceneManagement;
+using System;
 
 public class MenuController : MonoBehaviour {
 
@@ -8,16 +11,28 @@ public class MenuController : MonoBehaviour {
     private GameObject panelButtons,panelSelectHero,panelScrollAnywhere;
     [SerializeField]
     private UILabel CointTxt;
+    [SerializeField]
+    private string id;
+    InterstitialAd interstitial;
+
+    void Awake() {
+        CtreateInsertial();
+    }
 
     void Start () {
-        //PlayerPrefs.DeleteAll();
-        //PlayerPrefs.SetInt("CountCoins",4894847);
-        //PlayerPrefs.GetString("SelectedHero");
+       
     }                                            	
 	// Update is called once per frame
 	void Update () {
-        CointTxt.text = PlayerPrefs.GetInt("CountCoins").ToString();
-	}
+        CointTxt.text = PlayerPrefs.GetInt("CountCoins").ToString();       
+    }
+    public void LoadGame() {
+        if (interstitial.IsLoaded()) {
+            interstitial.Show();
+        } else
+            SceneManager.LoadScene("game");
+
+    }
 
     public void QuitFromGame() {
         Application.Quit();
@@ -38,4 +53,16 @@ public class MenuController : MonoBehaviour {
         HideOrShow(panelSelectHero,false);
         HideOrShow(panelScrollAnywhere,false);
     }
+
+    void CtreateInsertial() {
+        interstitial = new InterstitialAd(id);        
+        AdRequest request = new AdRequest.Builder().AddTestDevice(AdRequest.TestDeviceSimulator).AddTestDevice("1ed90b7345391805").Build();                
+        interstitial.OnAdClosed += HandleInterstitialClosed;        
+        interstitial.LoadAd(request);
+    }
+
+    public void HandleInterstitialClosed(object sender,EventArgs args) {
+        SceneManager.LoadScene("game");
+    }
+
 }
