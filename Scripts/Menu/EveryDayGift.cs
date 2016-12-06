@@ -3,7 +3,10 @@ using System;
 
 public class EveryDayGift : MonoBehaviour {
 
-    
+    //public int bonusCount;
+    //public UILabel txt;
+    //public float timer;
+
     void Awake () {
 
         string stringDate = PlayerPrefs.GetString("PlayDate");
@@ -28,6 +31,9 @@ public class EveryDayGift : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+        //timer += Time.deltaTime;
+        //if (timer <= 3f)
+        //    txt.text = UnityEngine.Random.Range(100,500).ToString();
+
 	}
 }
