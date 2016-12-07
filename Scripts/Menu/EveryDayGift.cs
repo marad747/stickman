@@ -32,8 +32,11 @@ public class EveryDayGift : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //timer += Time.deltaTime;
-        //if (timer <= 3f)
+        //if (timer <= 3f) {
         //    txt.text = UnityEngine.Random.Range(100,500).ToString();
+           
+        //}  else
+        //    this.enabled = false;
 
-	}
+    }
 }

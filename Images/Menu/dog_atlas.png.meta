@@ -1,0 +1,476 @@
+fileFormatVersion: 2
+guid: 452d2bd5136459e4d9cfd0160e34e6a4
+timeCreated: 1481107338
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: dog_atlas_0
+    21300002: dog_atlas_1
+    21300004: dog_atlas_2
+    21300006: dog_atlas_3
+    21300008: dog_atlas_4
+    21300010: dog_atlas_5
+    21300012: dog_atlas_6
+    21300014: dog_atlas_7
+    21300016: dog_atlas_8
+    21300018: dog_atlas_9
+    21300020: dog_atlas_10
+    21300022: dog_atlas_11
+    21300024: dog_atlas_12
+    21300026: dog_atlas_13
+    21300028: dog_atlas_14
+    21300030: dog_atlas_15
+    21300032: dog_atlas_16
+    21300034: dog_atlas_17
+    21300036: dog_atlas_18
+    21300038: dog_atlas_19
+    21300040: dog_atlas_20
+    21300042: dog_atlas_21
+    21300044: dog_atlas_22
+    21300046: dog_atlas_23
+    21300048: dog_atlas_24
+    21300050: dog_atlas_25
+    21300052: dog_atlas_26
+    21300054: dog_atlas_27
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dog_atlas_0
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 3541
+        width: 225
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_1
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 3541
+        width: 224
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_2
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 3541
+        width: 225
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_3
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 3541
+        width: 225
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_4
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 3541
+        width: 225
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_5
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 3541
+        width: 225
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_6
+      rect:
+        serializedVersion: 2
+        x: 1915
+        y: 3541
+        width: 225
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_7
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 3541
+        width: 225
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_8
+      rect:
+        serializedVersion: 2
+        x: 2503
+        y: 3541
+        width: 223
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_9
+      rect:
+        serializedVersion: 2
+        x: 2797
+        y: 3541
+        width: 225
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_10
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 3049
+        width: 225
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_11
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 3049
+        width: 222
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_12
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 3049
+        width: 225
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_13
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 3049
+        width: 222
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_14
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 3049
+        width: 222
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_15
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 3049
+        width: 225
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_16
+      rect:
+        serializedVersion: 2
+        x: 1909
+        y: 3049
+        width: 225
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_17
+      rect:
+        serializedVersion: 2
+        x: 2202
+        y: 3049
+        width: 225
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_18
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 2484
+        width: 331
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_19
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2484
+        width: 333
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_20
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 2484
+        width: 331
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_21
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 2484
+        width: 334
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_22
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 2484
+        width: 332
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_23
+      rect:
+        serializedVersion: 2
+        x: 2111
+        y: 2484
+        width: 334
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_24
+      rect:
+        serializedVersion: 2
+        x: 2515
+        y: 2484
+        width: 334
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_25
+      rect:
+        serializedVersion: 2
+        x: 2919
+        y: 2484
+        width: 331
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_26
+      rect:
+        serializedVersion: 2
+        x: 3321
+        y: 2484
+        width: 334
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: dog_atlas_27
+      rect:
+        serializedVersion: 2
+        x: 3725
+        y: 2484
+        width: 331
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

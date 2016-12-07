@@ -1,0 +1,756 @@
+fileFormatVersion: 2
+guid: edd1d5412f7e1034a9fd122eee4fd826
+timeCreated: 1481118914
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: santa_atlas_0
+    21300002: santa_atlas_1
+    21300004: santa_atlas_2
+    21300006: santa_atlas_3
+    21300008: santa_atlas_4
+    21300010: santa_atlas_5
+    21300012: santa_atlas_6
+    21300014: santa_atlas_7
+    21300016: santa_atlas_8
+    21300018: santa_atlas_9
+    21300020: santa_atlas_10
+    21300022: santa_atlas_11
+    21300024: santa_atlas_12
+    21300026: santa_atlas_13
+    21300028: santa_atlas_14
+    21300030: santa_atlas_15
+    21300032: santa_atlas_16
+    21300034: santa_atlas_17
+    21300036: santa_atlas_18
+    21300038: santa_atlas_19
+    21300040: santa_atlas_20
+    21300042: santa_atlas_21
+    21300044: santa_atlas_22
+    21300046: santa_atlas_23
+    21300048: santa_atlas_24
+    21300050: santa_atlas_25
+    21300052: santa_atlas_26
+    21300054: santa_atlas_27
+    21300056: santa_atlas_28
+    21300058: santa_atlas_29
+    21300060: santa_atlas_30
+    21300062: santa_atlas_31
+    21300064: santa_atlas_32
+    21300066: santa_atlas_33
+    21300068: santa_atlas_34
+    21300070: santa_atlas_35
+    21300072: santa_atlas_36
+    21300074: santa_atlas_37
+    21300076: santa_atlas_38
+    21300078: santa_atlas_39
+    21300080: santa_atlas_40
+    21300082: santa_atlas_41
+    21300084: santa_atlas_42
+    21300086: santa_atlas_43
+    21300088: santa_atlas_44
+    21300090: santa_atlas_45
+    21300092: santa_atlas_46
+    21300094: santa_atlas_47
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: santa_atlas_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 3400
+        width: 351
+        height: 555
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_1
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 3400
+        width: 351
+        height: 554
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_2
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 3400
+        width: 348
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_3
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 3400
+        width: 347
+        height: 551
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_4
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 3400
+        width: 348
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_5
+      rect:
+        serializedVersion: 2
+        x: 2002
+        y: 3400
+        width: 348
+        height: 547
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_6
+      rect:
+        serializedVersion: 2
+        x: 2389
+        y: 3400
+        width: 347
+        height: 547
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_7
+      rect:
+        serializedVersion: 2
+        x: 2776
+        y: 3400
+        width: 347
+        height: 547
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_8
+      rect:
+        serializedVersion: 2
+        x: 3162
+        y: 3400
+        width: 344
+        height: 547
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_9
+      rect:
+        serializedVersion: 2
+        x: 3545
+        y: 3400
+        width: 344
+        height: 543
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_10
+      rect:
+        serializedVersion: 2
+        x: 3928
+        y: 3400
+        width: 340
+        height: 543
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_11
+      rect:
+        serializedVersion: 2
+        x: 4311
+        y: 3400
+        width: 343
+        height: 547
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_12
+      rect:
+        serializedVersion: 2
+        x: 4693
+        y: 3400
+        width: 348
+        height: 547
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_13
+      rect:
+        serializedVersion: 2
+        x: 5080
+        y: 3400
+        width: 348
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_14
+      rect:
+        serializedVersion: 2
+        x: 5467
+        y: 3400
+        width: 351
+        height: 555
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_15
+      rect:
+        serializedVersion: 2
+        x: 5857
+        y: 3400
+        width: 352
+        height: 554
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_16
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 2797
+        width: 347
+        height: 533
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_17
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 2799
+        width: 343
+        height: 523
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_18
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 2799
+        width: 348
+        height: 519
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_19
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 2799
+        width: 351
+        height: 558
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_20
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 2796
+        width: 434
+        height: 565
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_21
+      rect:
+        serializedVersion: 2
+        x: 2107
+        y: 2799
+        width: 477
+        height: 539
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_22
+      rect:
+        serializedVersion: 2
+        x: 2631
+        y: 2799
+        width: 480
+        height: 543
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_23
+      rect:
+        serializedVersion: 2
+        x: 3158
+        y: 2799
+        width: 488
+        height: 547
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_24
+      rect:
+        serializedVersion: 2
+        x: 3693
+        y: 2799
+        width: 496
+        height: 547
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_25
+      rect:
+        serializedVersion: 2
+        x: 4229
+        y: 2795
+        width: 492
+        height: 555
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_26
+      rect:
+        serializedVersion: 2
+        x: 4764
+        y: 2799
+        width: 496
+        height: 551
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_27
+      rect:
+        serializedVersion: 2
+        x: 5307
+        y: 2799
+        width: 496
+        height: 551
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_28
+      rect:
+        serializedVersion: 2
+        x: 5846
+        y: 2799
+        width: 422
+        height: 576
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_29
+      rect:
+        serializedVersion: 2
+        x: 6315
+        y: 2799
+        width: 359
+        height: 562
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_30
+      rect:
+        serializedVersion: 2
+        x: 6718
+        y: 2799
+        width: 350
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_31
+      rect:
+        serializedVersion: 2
+        x: 7115
+        y: 2796
+        width: 348
+        height: 538
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_32
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1951
+        width: 362
+        height: 621
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_33
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1951
+        width: 356
+        height: 621
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_34
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 1951
+        width: 359
+        height: 617
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_35
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 1951
+        width: 356
+        height: 617
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_36
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 1951
+        width: 355
+        height: 617
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_37
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 1951
+        width: 359
+        height: 613
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_38
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 1951
+        width: 357
+        height: 613
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_39
+      rect:
+        serializedVersion: 2
+        x: 2529
+        y: 1951
+        width: 356
+        height: 613
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_40
+      rect:
+        serializedVersion: 2
+        x: 2881
+        y: 1951
+        width: 355
+        height: 613
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_41
+      rect:
+        serializedVersion: 2
+        x: 3233
+        y: 1951
+        width: 359
+        height: 613
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_42
+      rect:
+        serializedVersion: 2
+        x: 3588
+        y: 1951
+        width: 359
+        height: 610
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_43
+      rect:
+        serializedVersion: 2
+        x: 3943
+        y: 1951
+        width: 356
+        height: 613
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_44
+      rect:
+        serializedVersion: 2
+        x: 4299
+        y: 1951
+        width: 357
+        height: 627
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_45
+      rect:
+        serializedVersion: 2
+        x: 4650
+        y: 1951
+        width: 359
+        height: 617
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_46
+      rect:
+        serializedVersion: 2
+        x: 5006
+        y: 1951
+        width: 355
+        height: 621
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: santa_atlas_47
+      rect:
+        serializedVersion: 2
+        x: 5363
+        y: 1951
+        width: 354
+        height: 617
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

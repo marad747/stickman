@@ -6,13 +6,14 @@ using System;
 
 /*
 CountCoins - Количество монеток
-
+SelectedHero - Выбранный герой
+FirstBoot - первый раз запущена игра
 */
 public class MenuController : MonoBehaviour {
 
     // Use this for initialization    
     [SerializeField]
-    private GameObject panelButtons,panelSelectHero,panelScrollAnywhere;
+    private GameObject panelButtons,panelSelectHero,panelScrollAnywhere,panelExit,panelHeroes;
     [SerializeField]
     private UILabel CointTxt;
     [SerializeField]
@@ -20,11 +21,19 @@ public class MenuController : MonoBehaviour {
     InterstitialAd interstitial;
 
     void Awake() {
-        CtreateInsertial();        
+        CtreateInsertial();
+        //PlayerPrefs.DeleteAll();
+        if (PlayerPrefs.GetString("FirstBoot") != "yes") {
+            PlayerPrefs.SetString("SelectedHero","Stickman");
+            PlayerPrefs.SetString("FirstBoot","yes");
+            PlayerPrefs.SetInt("CountCoins",1000000);
+            PlayerPrefs.SetString("StickmanBuy","yes");
+        }
     }
 
     void Start () {
-         
+
+        
     }                                            	
 	// Update is called once per frame
 	void Update () {
@@ -48,16 +57,18 @@ public class MenuController : MonoBehaviour {
         obj.SetActive(flag);
     }
 
-    public void showSelectHero() {
+    public void showSelectHero() {        
         HideOrShow(panelButtons,false);
         HideOrShow(panelSelectHero,true);
         HideOrShow(panelScrollAnywhere,true);
+        HideOrShow(panelHeroes,false);
     }
 
     public void showMainMenu() {
         HideOrShow(panelButtons,true);
         HideOrShow(panelSelectHero,false);
         HideOrShow(panelScrollAnywhere,false);
+        HideOrShow(panelHeroes,true);
     }
 
     void CtreateInsertial() {
@@ -71,4 +82,17 @@ public class MenuController : MonoBehaviour {
         SceneManager.LoadScene("game");
     }
 
+    public void showExitQuestion() {
+        HideOrShow(panelButtons,false);
+        HideOrShow(panelExit,true);
+    }
+
+    public void ExitFromGame() {
+        Application.Quit();
+    }
+
+    public void BackTogame() {
+        HideOrShow(panelExit,false);
+        HideOrShow(panelButtons,true);        
+    }
 }

@@ -1,0 +1,700 @@
+fileFormatVersion: 2
+guid: 1aa37d2dfe8f271459bfe7c163b13df6
+timeCreated: 1481104581
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: stickmanATLAS_0
+    21300002: stickmanATLAS_1
+    21300004: stickmanATLAS_2
+    21300006: stickmanATLAS_3
+    21300008: stickmanATLAS_4
+    21300010: stickmanATLAS_5
+    21300012: stickmanATLAS_6
+    21300014: stickmanATLAS_7
+    21300016: stickmanATLAS_8
+    21300018: stickmanATLAS_9
+    21300020: stickmanATLAS_10
+    21300022: stickmanATLAS_11
+    21300024: stickmanATLAS_12
+    21300026: stickmanATLAS_13
+    21300028: stickmanATLAS_14
+    21300030: stickmanATLAS_15
+    21300032: stickmanATLAS_16
+    21300034: stickmanATLAS_17
+    21300036: stickmanATLAS_18
+    21300038: stickmanATLAS_19
+    21300040: stickmanATLAS_20
+    21300042: stickmanATLAS_21
+    21300044: stickmanATLAS_22
+    21300046: stickmanATLAS_23
+    21300048: stickmanATLAS_24
+    21300050: stickmanATLAS_25
+    21300052: stickmanATLAS_26
+    21300054: stickmanATLAS_27
+    21300056: stickmanATLAS_28
+    21300058: stickmanATLAS_29
+    21300060: stickmanATLAS_30
+    21300062: stickmanATLAS_31
+    21300064: stickmanATLAS_32
+    21300066: stickmanATLAS_33
+    21300068: stickmanATLAS_34
+    21300070: stickmanATLAS_35
+    21300072: stickmanATLAS_36
+    21300074: stickmanATLAS_37
+    21300076: stickmanATLAS_38
+    21300078: stickmanATLAS_39
+    21300080: stickmanATLAS_40
+    21300082: stickmanATLAS_41
+    21300084: stickmanATLAS_42
+    21300086: stickmanATLAS_43
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: stickmanATLAS_0
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 3369
+        width: 231
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_1
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 3371
+        width: 228
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_2
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 3371
+        width: 231
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_3
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3369
+        width: 231
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_4
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 3369
+        width: 230
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_5
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 3369
+        width: 231
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_6
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 3371
+        width: 228
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_7
+      rect:
+        serializedVersion: 2
+        x: 2187
+        y: 3369
+        width: 229
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_8
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2681
+        width: 231
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_9
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 2683
+        width: 231
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_10
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2683
+        width: 231
+        height: 489
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_11
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 2681
+        width: 231
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_12
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 2683
+        width: 231
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_13
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 2680
+        width: 231
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_14
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 2683
+        width: 231
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_15
+      rect:
+        serializedVersion: 2
+        x: 1730
+        y: 2683
+        width: 231
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_16
+      rect:
+        serializedVersion: 2
+        x: 1976
+        y: 2683
+        width: 231
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_17
+      rect:
+        serializedVersion: 2
+        x: 2222
+        y: 2683
+        width: 231
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_18
+      rect:
+        serializedVersion: 2
+        x: 2468
+        y: 2683
+        width: 232
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_19
+      rect:
+        serializedVersion: 2
+        x: 2717
+        y: 2683
+        width: 229
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_20
+      rect:
+        serializedVersion: 2
+        x: 2963
+        y: 2683
+        width: 229
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_21
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 2683
+        width: 231
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_22
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 2683
+        width: 231
+        height: 501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_23
+      rect:
+        serializedVersion: 2
+        x: 3702
+        y: 2683
+        width: 231
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_24
+      rect:
+        serializedVersion: 2
+        x: 3948
+        y: 2683
+        width: 231
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_25
+      rect:
+        serializedVersion: 2
+        x: 4194
+        y: 2683
+        width: 231
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_26
+      rect:
+        serializedVersion: 2
+        x: 4440
+        y: 2683
+        width: 231
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_27
+      rect:
+        serializedVersion: 2
+        x: 4686
+        y: 2683
+        width: 231
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_28
+      rect:
+        serializedVersion: 2
+        x: 4932
+        y: 2683
+        width: 231
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_29
+      rect:
+        serializedVersion: 2
+        x: 5178
+        y: 2683
+        width: 231
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_30
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1997
+        width: 232
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_31
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1997
+        width: 231
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_32
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1997
+        width: 231
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_33
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 1997
+        width: 231
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_34
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 1997
+        width: 231
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_35
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 1997
+        width: 231
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_36
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 1997
+        width: 231
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_37
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 992
+        width: 331
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_38
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 992
+        width: 331
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_39
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 992
+        width: 331
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_40
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 992
+        width: 331
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_41
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 992
+        width: 334
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_42
+      rect:
+        serializedVersion: 2
+        x: 1973
+        y: 992
+        width: 334
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stickmanATLAS_43
+      rect:
+        serializedVersion: 2
+        x: 2354
+        y: 992
+        width: 334
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
