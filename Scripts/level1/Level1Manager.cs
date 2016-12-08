@@ -6,7 +6,7 @@ public class Level1Manager : MonoBehaviour {
 
     // Use this for initialization
     public static Level1Manager instance;
-    public GameObject stickman,platform,spawnPoint,target,cat,dog;
+    public GameObject stickman,platform,spawnPoint,target,cat,dog,dedMoroz;
     public List<GameObject> platforms;
     public float damping;
     public int countPlatformPassed;
@@ -31,7 +31,7 @@ public class Level1Manager : MonoBehaviour {
     public void ChangePlatform() {
         for (int i = 1;i < platforms.Count;i++) {
             var blockTemp = platforms [i];
-            blockTemp.transform.localScale = new Vector3(Random.Range(0.5f,3f),platforms [i - 1].transform.localScale.y,1);
+            blockTemp.transform.localScale = new Vector3(Random.Range(0.5f, 3f),platforms [i - 1].transform.localScale.y,1);
             blockTemp.transform.position = new Vector3(platforms [i - 1].GetComponent<MeshRenderer>().bounds.max.x + Random.Range(2f,4f),Random.Range(-3.6f,-2.3f),0);
         }
     }
@@ -67,40 +67,33 @@ public class Level1Manager : MonoBehaviour {
    
     void CreateHero() {
         string Currenthero = PlayerPrefs.GetString("SelectedHero");
-        Debug.Log(PlayerPrefs.GetString("SelectedHero"));
+        //Debug.Log(PlayerPrefs.GetString("SelectedHero"));
 
         switch (Currenthero) {
 
         case "Stickman":
-                var heroStickman = Instantiate(stickman,spawnPoint.transform.position,Quaternion.identity) as GameObject;
-                CameraFollow.instance.target = heroStickman.gameObject;
-                target = heroStickman;
-                HeroControlled.instance.Hero = heroStickman;
-                HeroControlled.instance.rb = HeroControlled.instance.Hero.GetComponent<Rigidbody2D>();
-                HeroControlled.instance.anim = HeroControlled.instance.Hero.GetComponent<Animator>();
+            CreateHeroes(stickman);
         break;
         case "Cat":
-                var heroCat = Instantiate(cat,spawnPoint.transform.position,Quaternion.identity) as GameObject;
-                CameraFollow.instance.target = heroCat.gameObject;
-                target = heroCat;
-                HeroControlled.instance.Hero = heroCat;
-                HeroControlled.instance.rb = HeroControlled.instance.Hero.GetComponent<Rigidbody2D>();
-                HeroControlled.instance.anim = HeroControlled.instance.Hero.GetComponent<Animator>();
+            CreateHeroes(cat);
         break;
         case "Dog":
-            var heroDog = Instantiate(dog,spawnPoint.transform.position,Quaternion.identity) as GameObject;
-            CameraFollow.instance.target = heroDog.gameObject;
-            target = heroDog;
-            HeroControlled.instance.Hero = heroDog;
-            HeroControlled.instance.rb = HeroControlled.instance.Hero.GetComponent<Rigidbody2D>();
-            HeroControlled.instance.anim = HeroControlled.instance.Hero.GetComponent<Animator>();
+            CreateHeroes(dog);
+        break;
+        case "DedMoroz":
+            CreateHeroes(dedMoroz);
         break;
         default:
             break;
         }
+    }
 
-        
-        
-
+    public void CreateHeroes(GameObject Hero) {
+        var HeroTemp = Instantiate(Hero,spawnPoint.transform.position,Quaternion.identity) as GameObject;
+        CameraFollow.instance.target = HeroTemp.gameObject;
+        target = HeroTemp;
+        HeroControlled.instance.Hero = HeroTemp;
+        HeroControlled.instance.rb = HeroControlled.instance.Hero.GetComponent<Rigidbody2D>();
+        HeroControlled.instance.anim = HeroControlled.instance.Hero.GetComponent<Animator>(); 
     }
 }

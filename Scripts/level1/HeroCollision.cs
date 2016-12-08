@@ -16,8 +16,9 @@ public class HeroCollision : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        isGround = Physics2D.OverlapCircle(groundCheck.position,groundRadius,whatIsGround);
-	}
+        //isGround = Physics2D.OverlapCircle(groundCheck.position,groundRadius,whatIsGround);
+        isGround = Physics2D.OverlapBox(groundCheck.position,new Vector2(groundRadius,groundRadius),180,whatIsGround);
+    }
 
     void OnCollisionEnter2D(Collision2D collision) {
         HeroControlled.instance.anim.SetBool("fly",false);

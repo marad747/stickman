@@ -98,7 +98,7 @@ namespace GoogleMobileAds.Common
         public void ShowInterstitial()
         {
             Debug.Log("Dummy " + MethodBase.GetCurrentMethod().Name);
-            SceneManager.LoadScene("game");
+            SceneManager.LoadScene("level1");
         }
 
         public void DestroyInterstitial()

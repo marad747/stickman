@@ -17,7 +17,10 @@ public class LoadLevels : MonoBehaviour {
 	}
 
     public void LoadLevel() {
-        SceneManager.LoadScene(levelName);
-
+        if (MenuController.instance.interstitial.IsLoaded()) {
+            MenuController.instance.nameScene = levelName;
+            MenuController.instance.interstitial.Show();
+        } else
+            SceneManager.LoadScene(levelName);
     } 
 }

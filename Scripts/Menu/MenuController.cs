@@ -11,16 +11,19 @@ FirstBoot - первый раз запущена игра
 */
 public class MenuController : MonoBehaviour {
 
-    // Use this for initialization    
+    // Use this for initialization 
+    public static MenuController instance;
+    public string nameScene;
     [SerializeField]
     private GameObject panelButtons,panelSelectHero,panelScrollAnywhere,panelExit,panelHeroes,panelLevels, panelScrollAnywhereLevels;
     [SerializeField]
     private UILabel CointTxt;
     [SerializeField]
     private string id;
-    InterstitialAd interstitial;
+    public InterstitialAd interstitial;
 
     void Awake() {
+        instance = this;
         CtreateInsertial();
      }
 
@@ -33,12 +36,8 @@ public class MenuController : MonoBehaviour {
         CointTxt.text = PlayerPrefs.GetInt("CountCoins").ToString();
     }
 
-    public void LoadGame() {
-        if (interstitial.IsLoaded()) {
-            interstitial.Show();
-        } else
-            SceneManager.LoadScene("game");
-
+    void OnGUI() {
+        GUILayout.Label(interstitial.IsLoaded().ToString());
     }
 
     public void QuitFromGame() {
@@ -67,12 +66,12 @@ public class MenuController : MonoBehaviour {
     void CtreateInsertial() {
         interstitial = new InterstitialAd(id);        
         AdRequest request = new AdRequest.Builder().AddTestDevice(AdRequest.TestDeviceSimulator).AddTestDevice("1ed90b7345391805").Build();                
-        interstitial.OnAdClosed += HandleInterstitialClosed;        
+        interstitial.OnAdClosed += HandleInterstitialClosed;     
         interstitial.LoadAd(request);
     }
 
     public void HandleInterstitialClosed(object sender,EventArgs args) {
-        SceneManager.LoadScene("game");
+        SceneManager.LoadScene(nameScene);
     }
 
     public void showExitQuestion() {
