@@ -13,7 +13,7 @@ public class MenuController : MonoBehaviour {
 
     // Use this for initialization    
     [SerializeField]
-    private GameObject panelButtons,panelSelectHero,panelScrollAnywhere,panelExit,panelHeroes;
+    private GameObject panelButtons,panelSelectHero,panelScrollAnywhere,panelExit,panelHeroes,panelLevels, panelScrollAnywhereLevels;
     [SerializeField]
     private UILabel CointTxt;
     [SerializeField]
@@ -22,14 +22,7 @@ public class MenuController : MonoBehaviour {
 
     void Awake() {
         CtreateInsertial();
-        //PlayerPrefs.DeleteAll();
-        if (PlayerPrefs.GetString("FirstBoot") != "yes") {
-            PlayerPrefs.SetString("SelectedHero","Stickman");
-            PlayerPrefs.SetString("FirstBoot","yes");
-            PlayerPrefs.SetInt("CountCoins",1000000);
-            PlayerPrefs.SetString("StickmanBuy","yes");
-        }
-    }
+     }
 
     void Start () {
 
@@ -95,4 +88,20 @@ public class MenuController : MonoBehaviour {
         HideOrShow(panelExit,false);
         HideOrShow(panelButtons,true);        
     }
+
+    public void ShowMenuHideLevel() {
+        HideOrShow(panelLevels,false);
+        HideOrShow(panelButtons,true);
+        HideOrShow(panelHeroes,true);
+        HideOrShow(panelScrollAnywhereLevels,false);
+    }
+
+    public void HideMenuShowLevels() {
+        HideOrShow(panelLevels,true);
+        HideOrShow(panelButtons,false);
+        HideOrShow(panelHeroes,false);
+        HideOrShow(panelScrollAnywhereLevels,true);
+        
+    }
+
 }
