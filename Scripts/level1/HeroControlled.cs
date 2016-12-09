@@ -18,8 +18,8 @@ public class HeroControlled : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (currentBlock == previousBlock)
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //if (currentBlock == previousBlock)
+        //    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     void OnMouseDown() {
@@ -29,7 +29,7 @@ public class HeroControlled : MonoBehaviour {
     }
     void OnMouseUp() {
         diff = Time.time - startTime;
-        if (diff < 2f) {
+        if (diff <= 2f) {
             forceUp = 200 * diff;
             forceRight = 170 * diff;
         } else {

@@ -26,5 +26,6 @@ public class HeroSelection : MonoBehaviour {
                 heroes[i].SetActive(true);
 
         }
+        MenuController.instance.showMainMenu();
     }
 }

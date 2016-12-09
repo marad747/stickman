@@ -45,15 +45,15 @@ public class MenuController : MonoBehaviour {
 
     }
 
-    void HideOrShow(GameObject obj,bool flag) {
+    void HideOrShow(GameObject obj, bool flag) {
         obj.SetActive(flag);
     }
 
     public void showSelectHero() {        
-        HideOrShow(panelButtons,false);
-        HideOrShow(panelSelectHero,true);
-        HideOrShow(panelScrollAnywhere,true);
-        HideOrShow(panelHeroes,false);
+        HideOrShow(panelButtons, false);
+        HideOrShow(panelSelectHero, true);
+        HideOrShow(panelScrollAnywhere, true);
+        HideOrShow(panelHeroes, false);
     }
 
     public void showMainMenu() {
@@ -70,7 +70,7 @@ public class MenuController : MonoBehaviour {
         interstitial.LoadAd(request);
     }
 
-    public void HandleInterstitialClosed(object sender,EventArgs args) {
+    public void HandleInterstitialClosed(object sender, EventArgs args) {
         SceneManager.LoadScene(nameScene);
     }
 
