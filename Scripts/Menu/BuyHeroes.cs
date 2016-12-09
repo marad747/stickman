@@ -6,14 +6,14 @@ public class BuyHeroes : MonoBehaviour {
 
     // Use this for initialization
     public int price;
-    public GameObject target;    
+    public UIButton target;    
 	void Start () {
         if (PlayerPrefs.GetString(gameObject.name.ToString()) == "yes") {
-            gameObject.SetActive(false);
-            target.gameObject.SetActive(true);
-        }
-		
-	}
+            gameObject.SetActive(false);        
+            target.enabled = true;
+        } else
+            target.enabled = false;		
+	 }
 	
 	// Update is called once per frame
 	void Update () {
@@ -23,7 +23,7 @@ public class BuyHeroes : MonoBehaviour {
     public void BuyHero() {
         if (PlayerPrefs.GetInt("CountCoins") >= price) {
             gameObject.SetActive(false);
-            target.gameObject.SetActive(true);
+            target.enabled = true;
             PlayerPrefs.SetInt("CountCoins",PlayerPrefs.GetInt("CountCoins") - price);
             PlayerPrefs.SetString(gameObject.name.ToString(),"yes");
            // Debug.Log("Купили " + gameObject.name.ToString());

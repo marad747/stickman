@@ -8,6 +8,10 @@ using System;
 CountCoins - Количество монеток
 SelectedHero - Выбранный герой
 FirstBoot - первый раз запущена игра
+DedMoroz
+Cat
+Dog
+Stickman
 */
 public class MenuController : MonoBehaviour {
 
@@ -24,8 +28,9 @@ public class MenuController : MonoBehaviour {
 
     void Awake() {
         instance = this;
-        CtreateInsertial();
-     }
+        //PlayerPrefs.DeleteAll();
+        CtreateInsertial();        
+    }
 
     void Start () {
 

@@ -12,7 +12,7 @@ public class Level1Manager : MonoBehaviour {
     public int countPlatformPassed;
     public bool isItLast;
     void Awake() {
-        instance = this;
+        instance = this;        
     }
 
     void Start() {
