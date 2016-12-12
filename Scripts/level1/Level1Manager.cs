@@ -1,16 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Level1Manager : MonoBehaviour {
 
     // Use this for initialization
     public static Level1Manager instance;
-    public GameObject stickman,platform,spawnPoint,target,cat,dog,dedMoroz;
+    public GameObject stickman,platform,spawnPoint,target,cat,dog,dedMoroz,panelGameOver;
     public List<GameObject> platforms;
     public float damping;
-    public int countPlatformPassed;
-    public bool isItLast;
+    public int restartPrice; 
+    public bool isItLast,doIt;
+    public UILabel countPlatforms,Coins;
+    public float minRandom, maxRandom;
     void Awake() {
         instance = this;        
     }
@@ -23,7 +26,7 @@ public class Level1Manager : MonoBehaviour {
     public void CheckLastBlock(GameObject block) {
 
         for (int i = 0;i < platforms.Count;i++) {
-            if (platforms [i].gameObject == block.gameObject && i == 9)
+            if (platforms [i].gameObject == block.gameObject && i == 19)
                 isItLast = true;
         }
     }
@@ -31,15 +34,28 @@ public class Level1Manager : MonoBehaviour {
     public void ChangePlatform() {
         for (int i = 1;i < platforms.Count;i++) {
             var blockTemp = platforms [i];
-            blockTemp.transform.localScale = new Vector3(Random.Range(0.5f, 3f),platforms [i - 1].transform.localScale.y,1);
-            blockTemp.transform.position = new Vector3(platforms [i - 1].GetComponent<MeshRenderer>().bounds.max.x + Random.Range(2f,4f),Random.Range(-3.6f,-2.3f),0);
+            float rValue = Random.Range(minRandom,maxRandom);
+            blockTemp.transform.localScale = new Vector3(rValue,rValue,1);
+            blockTemp.transform.position = new Vector3(platforms [i - 1].GetComponent<SpriteRenderer>().bounds.max.x + Random.Range(2f,4f),Random.Range(-3.6f,-2.3f),0);
+
         }
     }
 
     public void ChangePosition() {
         isItLast = false;
         platforms.Reverse();
-        ChangePlatform();
+        
+
+        if (minRandom > 0.1f) {
+            minRandom -= 0.03f;
+           
+        }
+        if (maxRandom > 0.1f) {
+            maxRandom -= 0.03f;
+        }
+
+
+        ChangePlatform();        
     }
 
     // Update is called once per frame
@@ -50,17 +66,22 @@ public class Level1Manager : MonoBehaviour {
         }
         if (isItLast)
             ChangePosition();
+
+        Coins.text = PlayerPrefs.GetInt("CountCoins").ToString();       
     }
 
     void CreateBlocks() {
         var platformTemp = Instantiate(platform,new Vector3(-5.6f,-3.6f,0),Quaternion.identity) as GameObject;
         spawnPoint = GameObject.FindGameObjectWithTag("spawnPoint");
         platforms.Add(platformTemp);
-        for (int i = 1;i < 10;i++) {
-            var blockTemp = Instantiate(platform) as GameObject;
-            blockTemp.name = "Block" + Random.Range(1f,100f);
-            blockTemp.transform.localScale = new Vector3(Random.Range(0.5f,3f),platforms [i - 1].transform.localScale.y,1);
-            blockTemp.transform.position = new Vector3(platforms [i - 1].GetComponent<MeshRenderer>().bounds.max.x + Random.Range(2f,4f),Random.Range(-3.6f,-2.3f),0);
+        int t = 1;
+        for (int i = 1;i < 20;i++) {
+            var blockTemp = Instantiate(platform) as GameObject;            
+            t++;
+            blockTemp.name = "Block" + t.ToString();
+            float rValue = Random.Range(0.35f,0.7f);
+            blockTemp.transform.localScale = new Vector3(rValue,rValue,1);
+            blockTemp.transform.position = new Vector3(platforms [i - 1].GetComponent<SpriteRenderer>().bounds.max.x + Random.Range(2f,4f),Random.Range(-3.6f,-2.3f),0);
             platforms.Add(blockTemp);
         }
     }
@@ -96,4 +117,26 @@ public class Level1Manager : MonoBehaviour {
         HeroControlled.instance.rb = HeroControlled.instance.Hero.GetComponent<Rigidbody2D>();
         HeroControlled.instance.anim = HeroControlled.instance.Hero.GetComponent<Animator>(); 
     }
+
+    public void GameOver() {
+        panelGameOver.SetActive(true);
+        GetComponent<BoxCollider2D>().enabled = false;        
+        countPlatforms.text = HeroCollision.instance.countPlatforms + " platforms".ToString();
+    }
+
+    public void restartGame() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void returnGameForMoney() {                    
+        if (PlayerPrefs.GetInt("CountCoins") >= restartPrice) {            
+            target.SetActive(true);
+            PlayerPrefs.SetInt("CountCoins", PlayerPrefs.GetInt("CountCoins") - restartPrice);
+            GetComponent<BoxCollider2D>().enabled = true;
+            target.transform.position = new Vector2(HeroControlled.instance.previousBlock.transform.position.x,HeroControlled.instance.previousBlock.transform.position.y + 1.5f);
+            HeroControlled.instance.currentBlock = GameObject.Find("Main camera");            
+            panelGameOver.SetActive(false);
+            dethController.instance.follow.enabled = true;            
+        }                                                 
+    }    
 }

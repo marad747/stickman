@@ -10,6 +10,7 @@ public class HeroCollision : MonoBehaviour {
     public Transform groundCheck;
     public bool isGround;
     public float groundRadius = 0.2f;
+    public int countPlatforms = 0;
 	void Awake () {
         instance = this;
     }
@@ -23,9 +24,13 @@ public class HeroCollision : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D collision) {
         HeroControlled.instance.anim.SetBool("fly",false);
         HeroControlled.instance.anim.SetBool("jump",false);
-        Level1Manager.instance.CheckLastBlock(collision.gameObject);
-        Level1Manager.instance.countPlatformPassed++;
+        Level1Manager.instance.CheckLastBlock(collision.gameObject);        
         HeroControlled.instance.previousBlock = HeroControlled.instance.currentBlock;
         HeroControlled.instance.currentBlock = collision.gameObject;
+        
+    }
+
+    void OnCollisionExit2D(Collision2D collision) {
+        countPlatforms++;
     }
 }

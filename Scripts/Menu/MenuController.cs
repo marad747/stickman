@@ -40,11 +40,7 @@ public class MenuController : MonoBehaviour {
 	void Update () {
         CointTxt.text = PlayerPrefs.GetInt("CountCoins").ToString();
     }
-
-    void OnGUI() {
-        GUILayout.Label(interstitial.IsLoaded().ToString());
-    }
-
+   
     public void QuitFromGame() {
         Application.Quit();
 
@@ -107,5 +103,9 @@ public class MenuController : MonoBehaviour {
         HideOrShow(panelScrollAnywhereLevels,true);
         
     }
-
+     
+    void OnApplicationQuit() {
+        PlayerPrefs.Save();
+        
+    }
 }

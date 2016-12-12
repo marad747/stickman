@@ -7,9 +7,9 @@ public class HeroSelection : MonoBehaviour {
     public GameObject [] heroes;        
     void Start () {
         Debug.Log("select hero " + PlayerPrefs.GetString("SelectedHero").ToString());
-        if (PlayerPrefs.GetString("SelectedHero").ToString() == gameObject.name.ToString())
-            gameObject.GetComponent<UISprite>().color = Color.red;
-            //gameObject.SetActive(false);
+        //if (PlayerPrefs.GetString("SelectedHero").ToString() == gameObject.name.ToString())
+        //    gameObject.GetComponent<UISprite>().color = Color.red;
+        //gameObject.SetActive(false);
     }   
 
     // Update is called once per frame
@@ -21,13 +21,11 @@ public class HeroSelection : MonoBehaviour {
         Debug.Log("select hero " + gameObject.name.ToString());
         //for (int i = 0;i < heroes.Length;i++) {
         //    if (PlayerPrefs.GetString("SelectedHero").ToString() == heroes [i].gameObject.name.ToString())
-        //        heroes [i].gameObject.GetComponent<UI2DSprite>().color = Color.red;
-        //    heroes [i].gameObject.SetActive(false);
+        //        heroes [i].gameObject.GetComponent<UISprite>().color = Color.red;
         //    else
-        //        heroes [i].gameObject.GetComponent<UI2DSprite>().color = Color.white;
-        //    heroes [i].gameObject.SetActive(true);
+        //        heroes [i].gameObject.GetComponent<UISprite>().color = Color.yellow;
 
-        //}
-        //MenuController.instance.showMainMenu();
-    }
+        //    }
+            MenuController.instance.showMainMenu();
+        }
 }
