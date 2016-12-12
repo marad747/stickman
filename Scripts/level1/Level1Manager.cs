@@ -26,15 +26,17 @@ public class Level1Manager : MonoBehaviour {
     public void CheckLastBlock(GameObject block) {
 
         for (int i = 0;i < platforms.Count;i++) {
-            if (platforms [i].gameObject == block.gameObject && i == 19)
+            if (platforms [i].gameObject == block.gameObject && i == 16)
                 isItLast = true;
         }
     }
 
     public void ChangePlatform() {
-        for (int i = 1;i < platforms.Count;i++) {
+        float rValue = Random.Range(minRandom,maxRandom);        
+        platforms [4].transform.localScale = new Vector2(rValue,rValue);
+        platforms [4].transform.position = new Vector2(platforms [0].GetComponent<SpriteRenderer>().bounds.max.x + Random.Range(2f,4f),Random.Range(-3.6f,-2.3f));
+        for (int i = 5;i < platforms.Count;i++) {
             var blockTemp = platforms [i];
-            float rValue = Random.Range(minRandom,maxRandom);
             blockTemp.transform.localScale = new Vector3(rValue,rValue,1);
             blockTemp.transform.position = new Vector3(platforms [i - 1].GetComponent<SpriteRenderer>().bounds.max.x + Random.Range(2f,4f),Random.Range(-3.6f,-2.3f),0);
 
@@ -43,9 +45,7 @@ public class Level1Manager : MonoBehaviour {
 
     public void ChangePosition() {
         isItLast = false;
-        platforms.Reverse();
-        
-
+        platforms.Reverse(); 
         if (minRandom > 0.1f) {
             minRandom -= 0.03f;
            
