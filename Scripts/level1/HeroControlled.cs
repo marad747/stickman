@@ -11,7 +11,7 @@ public class HeroControlled : MonoBehaviour {
     public GameObject Hero, currentBlock, previousBlock,sliderObject;
     public Animator anim;
     public float startTime, forceRight, forceUp, diff, cunt;
-    public bool press;
+    public bool press,pressInAir;
     public UISlider slider;
 
     void Awake () {
@@ -34,23 +34,30 @@ public class HeroControlled : MonoBehaviour {
     }    
 
     void OnMouseDown() {
-        startTime = Time.time;
-        anim.SetBool("jump",true);
-        press = true;
-        sliderObject.SetActive(true);
+
+        if (HeroCollision.instance.isGround) {
+            startTime = Time.time;
+            anim.SetBool("jump",true);
+            press = true;
+            if (HeroCollision.instance.isGround)
+                sliderObject.SetActive(true);
+            pressInAir = false;
+        } else
+            pressInAir = true;
     }
 
     void OnMouseUp() {
-        sliderObject.SetActive(false);
-        if (diff <= 2f) {
-            forceUp = 200 * diff;
-            forceRight = 170 * diff;
-        }
-        if (HeroCollision.instance.isGround == true && diff >= 0.1f) {
-            anim.SetBool("fly",true);
-            rb.AddForce(Hero.transform.up * forceUp);
-            rb.AddForce(Hero.transform.right * forceRight);            
-        }
-        press = false;
+        
+            sliderObject.SetActive(false);
+            if (diff <= 2f) {
+                forceUp = 200 * diff;
+                forceRight = 170 * diff;
+            }
+            if (HeroCollision.instance.isGround == true && diff >= 0.1f && !pressInAir) {
+                anim.SetBool("fly",true);
+                rb.AddForce(Hero.transform.up * forceUp);
+                rb.AddForce(Hero.transform.right * forceRight);
+            }
+            press = false;        
     }
 }

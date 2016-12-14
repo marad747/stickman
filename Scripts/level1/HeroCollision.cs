@@ -10,15 +10,18 @@ public class HeroCollision : MonoBehaviour {
     public Transform groundCheck;
     public bool isGround;
     public float groundRadius = 0.2f;
-    public int countPlatforms = 0;
-	void Awake () {
-        instance = this;
+    public int countPlatforms = 0;   
+
+    void Awake () {
+        instance = this;        
     }
 	
 	// Update is called once per frame
 	void Update () {
         //isGround = Physics2D.OverlapCircle(groundCheck.position,groundRadius,whatIsGround);
         isGround = Physics2D.OverlapBox(groundCheck.position,new Vector2(groundRadius,groundRadius),90,whatIsGround);
+        
+        
     }
 
     void OnCollisionEnter2D(Collision2D collision) {
@@ -26,8 +29,8 @@ public class HeroCollision : MonoBehaviour {
         HeroControlled.instance.anim.SetBool("jump",false);
         Level1Manager.instance.CheckLastBlock(collision.gameObject);        
         HeroControlled.instance.previousBlock = HeroControlled.instance.currentBlock;
-        HeroControlled.instance.currentBlock = collision.gameObject;
-        
+        HeroControlled.instance.currentBlock = collision.gameObject;        
+
     }
 
     void OnCollisionExit2D(Collision2D collision) {

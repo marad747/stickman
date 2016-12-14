@@ -13,8 +13,7 @@ public class adsController : MonoBehaviour {
     RewardBasedVideoAd rewardBasedVideo;
     void Awake () {
         //instance = this;
-        CreateBanner();
-        CreateRevardVideo();
+       CreateBanner();       
     }
 	
 	// Update is called once per frame
@@ -27,34 +26,11 @@ public class adsController : MonoBehaviour {
         AdRequest request = new AdRequest.Builder().AddTestDevice(AdRequest.TestDeviceSimulator).AddTestDevice("1ed90b7345391805").Build();
         // Load the banner with the request.
         bannerView.OnAdLoaded += HandleOnAdLoaded;
-        bannerView.LoadAd(request);
+        bannerView.LoadAd(request);        
         
     }
 
     public void HandleOnAdLoaded(object sender,EventArgs args) {
         bannerView.Show();        
     }
-
-    public void CreateRevardVideo() {
-
-        rewardBasedVideo = RewardBasedVideoAd.Instance;
-        AdRequest request = new AdRequest.Builder().Build();
-        rewardBasedVideo.OnAdRewarded += HandleRewardBasedVideoRewarded;
-        rewardBasedVideo.LoadAd(request,id);
-
-    }
-
-    public void PlayReklamy() {
-        if (rewardBasedVideo.IsLoaded()) {
-            rewardBasedVideo.Show();
-        }
-    }
-    
-    public void HandleRewardBasedVideoRewarded(object sender,Reward args) {      
-        PlayerPrefs.SetInt("CountCoins",PlayerPrefs.GetInt("CountCoins") + 250);
-    }
-    void OnGUI() {
-        GUILayout.Label(rewardBasedVideo.IsLoaded().ToString());
-    }
-
 }

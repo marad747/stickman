@@ -6,8 +6,9 @@ public class BuyHeroes : MonoBehaviour {
 
     // Use this for initialization
     public int price;
-    public UIButton target;    
-	void Start () {
+    public UIButton target;
+    public string previousСharacter;
+    void Start () {
         if (PlayerPrefs.GetString(gameObject.name.ToString()) == "yes") {
             gameObject.SetActive(false);        
             target.enabled = true;
@@ -21,13 +22,16 @@ public class BuyHeroes : MonoBehaviour {
 	}
 
     public void BuyHero() {
+        Debug.Log( PlayerPrefs.GetString(previousСharacter));
         if (PlayerPrefs.GetInt("CountCoins") >= price) {
-            gameObject.SetActive(false);
-            target.enabled = true;
-            PlayerPrefs.SetInt("CountCoins",PlayerPrefs.GetInt("CountCoins") - price);
-            PlayerPrefs.SetString(gameObject.name.ToString(),"yes");
-           // Debug.Log("Купили " + gameObject.name.ToString());
-
+            if (PlayerPrefs.GetString(previousСharacter) == "yes"){
+                gameObject.SetActive(false);
+                target.enabled = true;
+                PlayerPrefs.SetInt("CountCoins",PlayerPrefs.GetInt("CountCoins") - price);
+                PlayerPrefs.SetString(gameObject.name.ToString(),"yes");
+                // Debug.Log("Купили " + gameObject.name.ToString());
+            }else
+                Debug.Log("buy previous character");
         }
     }
 }

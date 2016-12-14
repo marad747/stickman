@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class Level1Manager : MonoBehaviour {
 
     // Use this for initialization
@@ -16,6 +17,7 @@ public class Level1Manager : MonoBehaviour {
     public float minRandom, maxRandom;
     void Awake() {
         instance = this;        
+        //Advertisement.Initialize("1224192");   
     }
 
     void Start() {
@@ -126,6 +128,10 @@ public class Level1Manager : MonoBehaviour {
 
     public void restartGame() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void BackToMenu() {
+        SceneManager.LoadScene("menu");
     }
 
     public void returnGameForMoney() {                    
