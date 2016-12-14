@@ -54,9 +54,9 @@ public class HeroControlled : MonoBehaviour {
                 forceRight = 170 * diff;
             }
             if (HeroCollision.instance.isGround == true && diff >= 0.1f && !pressInAir) {
-                anim.SetBool("fly",true);
-                rb.AddForce(Hero.transform.up * forceUp);
-                rb.AddForce(Hero.transform.right * forceRight);
+                //anim.SetBool("fly",true);
+                //rb.AddForce(Hero.transform.up * forceUp);
+                //rb.AddForce(Hero.transform.right * forceRight);
             }
             press = false;        
     }
